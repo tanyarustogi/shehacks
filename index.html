@@ -16,7 +16,7 @@
   <!-- Navbar (sit on top) -->
   <div class="w3-top">
     <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-      <a href="#home" class="w3-bar-item w3-button">SheHacks</a>
+      <a href="#home" class="w3-bar-item w3-button">DD</a>
       <!-- Right-sided navbar links. Hide them on small screens -->
       <div class="w3-right w3-hide-small">
         <a href="#information" class="w3-bar-item w3-button">Information</a>
@@ -30,9 +30,8 @@
 
   <!-- Header -->
   <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-    <img class="w3-image" src="header.jpg" alt="Hamburger Catering" width="1600" height="800">
+    <br><br><br><br><img class="w3-image" src="logo.jpg" alt="Hamburger Catering" width="1600" height="800">
     <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-      <h1 class="w3-xxlarge">Digital Divas </h1>
 
 
     </div>
@@ -94,52 +93,113 @@
     <div class="w3-container w3-padding-64" id="health">
       <h1>Health</h1>
       <br>
-      <p>Below you can see symptons  .</p>
-      <p class="w3-text-blue-grey w3-large"><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>
-      <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
-      <form action="/action_page.php" target="_blank">
-        <p>
-          <input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name">
-        </p>
-        <p>
-          <input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People">
-        </p>
-        <p>
-          <input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00">
-        </p>
-        <p>
-          <input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message">
-        </p>
-        <p>
-          <button class="w3-button w3-light-grey w3-section button" type="submit">SEND MESSAGE</button>
-        </p>
-      </form>
+
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  #myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+
+  #myTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+  }
+
+  #myTable th, #myTable td {
+    text-align: left;
+    padding: 12px;
+  }
+
+  #myTable tr {
+    border-bottom: 1px solid #ddd;
+  }
+
+  #myTable tr.header, #myTable tr:hover {
+    background-color: #f1f1f1;
+  }
+  </style>
+
+  <body>
+
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for symptoms.." title="Type in symptoms">
+
+  <table id="myTable">
+    <tr class="header">
+      <th style="width:40%;">Symtoms</th>
+      <th style="width:20%;">Diseases</th>
+      <th style="width:40%;">Remidies</th>
+    </tr>
+    <tr>
+      <td>Nausea, vomiting, diarrhea</td>
+      <td>HIV and AIDs</td>
+      <td>Body therapies and hermal medicines</td>
+    </tr>
+    <tr>
+      <td>Runny nose, sneezing, sore throat</td>
+      <td>Respitory infections</td>
+      <td>Rest, no physical activity and herbal teas</td>
+    </tr>
+    <tr>
+      <td>Loose and watery stools, cramps, fever</td>
+      <td>Diarrheoa</td>
+      <td>Drink lots of water, avoid alcohol and coffee</td>
+    </tr>
+    <tr>
+      <td>Shaking chills, high fever headache</td>
+      <td>Malaria</td>
+      <td>Have cinnamon, orange juice, ginger, lime juice</td>
+    </tr>
+    <tr>
+      <td>Sudden weakness, confusion or dizziness</td>
+      <td>Stroke</td>
+      <td>Stop alcohol and smoking, eat healthy, exercise</td>
+    </tr>
+  </table>
+
+  <script>
+  function myFunction() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  }
+  </script>
+
+  </body>
+  </html>
+
     </div>
 
     <!-- Events Section -->
     <div class="w3-container w3-padding-64" id="events">
       <h1>Events</h1>
+      <p> Here you can see upcoming events talking about health and sex or about diseases. There will also be events here which promote STEM(science, technology, engineering and mathematics) jobs for women. To add an event onto your personal google calender, just click on it and then click 'add to my calender'. </p>
       <br>
-      <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
-      <p class="w3-text-blue-grey w3-large"><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>
-      <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
-      <form action="/action_page.php" target="_blank">
-        <p>
-          <input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name">
-        </p>
-        <p>
-          <input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People">
-        </p>
-        <p>
-          <input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00">
-        </p>
-        <p>
-          <input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message">
-        </p>
-        <p>
-          <button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button>
-        </p>
-      </form>
+      <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=1k56bju552h9te7up1cu9np7ko%40group.calendar.google.com&amp;color=%23853104&amp;ctz=Asia%2FSingapore" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
 
     <!-- Contact Section -->
@@ -148,11 +208,12 @@
       <br>
       <p>In case you are looking for more information or would like to give some feedback, do not hesitate to contact us. For emergency help, contact the contacts listed depending on your continent.</p>
       <p class="w3-text-blue-grey w3-large"><b>Asia:<br>
-        North America: <br>
-        South America: <br>
-        Africa:<br>
-        Europe: <br>
-        Australia: <br>
+        North America: 911 <br>
+        South America: 911 <br>
+        Africa: 118 <br>
+        Europe: 112 <br>
+        Australia: 000 <br>
+        Antartica: 911 <br>
       </b></p>
       <p>You can also contact us by phone +65 8138 8313 and +65 1234 5678 or email tanya242003@gmail.com and joshianisha@gmail.com, or you can send us a message here:</p>
       <p>
