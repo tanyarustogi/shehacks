@@ -1,0 +1,92 @@
+/* Import statements go here */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,900');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+
+body{
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-style: italic;
+}
+
+h1 {
+  font-family: 'Lobster', sans-serif;
+  font-weight: 900 !important;
+  text-transform: capitalize;
+}
+
+h2,
+h3,
+h4 {
+  font-style: italic;
+  color: #7f0059;
+  font-weight: 500;
+}
+
+h5 {
+  text-transform: uppercase;
+  font-weight: 900 !important;
+  color: #bababa;
+}
+
+h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+.button {
+  font-family: 'Robot', sans-serif;
+  font-weight: 500 !important
+}
+.w3-button {
+  font-family: 'Righteous', sans-serif !important;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 900 !important;
+  font-size: 15px;
+
+  border-radius: 4px;
+  text-align: center;
+  padding: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.w3-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.w3-button span:after {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.w3-button:hover {
+  color: white !important;
+  background-color: #ff6666 !important;
+}
+
+.p-special {
+  font-style: normal !important;
+  font-weight: 300;
+}
+
+.site-footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: grey;
+  text-align: center;
+  display: inline-block;
+
+}
